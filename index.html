@@ -3,52 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZeroMove - Dashboard</title>
+  <title>ZeroMove — Dashboard</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <header class="header">
+    <h1>ZeroMove</h1>
+  </header>
 
-<header class="topbar">
-  <h1>ZeroMove</h1>
-</header>
+  <main class="main-content">
+    <section class="activities-section">
+      <h2>Recente Activiteiten</h2>
 
-<main class="content">
-  <section class="feed">
-    <h2>Activiteiten</h2>
+      <article class="activity-item" tabindex="0" onclick="location.href='activiteit.html'">
+        <div class="activity-info">
+          <h3>Hardloopronde in het park</h3>
+          <time datetime="2025-05-23">23 mei 2025</time>
+        </div>
+        <div class="activity-stats">
+          <span>7,5 km</span>
+          <span>35m 12s</span>
+          <span>4:42 /km</span>
+        </div>
+      </article>
 
-    <article class="activity-card" tabindex="0" onclick="location.href='activiteit.html'">
-      <div class="activity-header">
-        <h3>Hardloopronde in het park</h3>
-        <time datetime="2025-05-23">23 mei 2025</time>
-      </div>
-      <p>Afstand: 7,5 km | Tijd: 35m 12s | Tempo: 4:42 /km</p>
-    </article>
+      <article class="activity-item" tabindex="0" onclick="location.href='activiteit.html'">
+        <div class="activity-info">
+          <h3>Fietstocht langs de kust</h3>
+          <time datetime="2025-05-21">21 mei 2025</time>
+        </div>
+        <div class="activity-stats">
+          <span>42 km</span>
+          <span>1u 45m</span>
+          <span>24 km/h</span>
+        </div>
+      </article>
 
-    <article class="activity-card" tabindex="0" onclick="location.href='activiteit.html'">
-      <div class="activity-header">
-        <h3>Fietstocht langs de kust</h3>
-        <time datetime="2025-05-21">21 mei 2025</time>
-      </div>
-      <p>Afstand: 42 km | Tijd: 1u 45m | Gem. snelheid: 24 km/h</p>
-    </article>
+      <!-- Meer activiteiten -->
+    </section>
+  </main>
 
-    <!-- Voeg hier meer activiteiten toe -->
-  </section>
-</main>
+  <nav class="nav-footer">
+    <a href="index.html" class="nav-link active">Dashboard</a>
+    <a href="activiteit.html" class="nav-link">Nieuwe activiteit</a>
+    <a href="profiel.html" class="nav-link">Profiel</a>
+  </nav>
 
-<nav class="bottombar">
-  <a href="index.html" class="active" aria-label="Dashboard">
-    <span class="icon">🏃‍♂️</span><span class="label">Dashboard</span>
-  </a>
-  <a href="activiteit.html" aria-label="Activiteit toevoegen">
-    <span class="icon">➕</span><span class="label">Nieuwe activiteit</span>
-  </a>
-  <a href="profiel.html" aria-label="Profiel">
-    <span class="icon">👤</span><span class="label">Profiel</span>
-  </a>
-</nav>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
