@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZeroMove - Activiteit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="topbar">
+  <button onclick="window.history.back()" aria-label="Terug">&#8592;</button>
+  <h1>Activiteit</h1>
+</header>
+
+<main class="content">
+  <section class="activity-details">
+    <h2>Hardloopronde in het park</h2>
+    <time datetime="2025-05-23">23 mei 2025</time>
+
+    <div class="stats">
+      <div><strong>Afstand:</strong> 7,5 km</div>
+      <div><strong>Tijd:</strong> 35m 12s</div>
+      <div><strong>Tempo:</strong> 4:42 /km</div>
+      <div><strong>Calorieën:</strong> 420 kcal</div>
+      <div><strong>Gemiddelde hartslag:</strong> 148 bpm</div>
+    </div>
+
+    <div class="map-placeholder">
+      <!-- Hier komt je kaart (Leaflet of Google Maps integratie) -->
+      <p>Kaart komt hier (nog te implementeren)</p>
+    </div>
+  </section>
+</main>
+
+<nav class="bottombar">
+  <a href="index.html" aria-label="Dashboard">
+    <span class="icon">🏃‍♂️</span><span class="label">Dashboard</span>
+  </a>
+  <a href="activiteit.html" class="active" aria-label="Activiteit toevoegen">
+    <span class="icon">➕</span><span class="label">Nieuwe activiteit</span>
+  </a>
+  <a href="profiel.html" aria-label="Profiel">
+    <span class="icon">👤</span><span class="label">Profiel</span>
+  </a>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
