@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: #121212;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #00aaff;
+}
+
+button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  margin-top: 1rem;
+}
