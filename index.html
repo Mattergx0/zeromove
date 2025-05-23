@@ -3,36 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZeroMove - Startpagina</title>
+  <title>ZeroMove - Dashboard</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Raleway:wght@800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>ZeroMove</h1>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="logboek.html">Logboek</a>
-      <a href="profiel.html">Profiel</a>
-      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Welkom bij ZeroMove</h2>
-    <p>Jouw persoonlijke bewegings- en sporttracker.</p>
+<header class="topbar">
+  <h1>ZeroMove</h1>
+</header>
 
-    <button onclick="alert('Start GPS tracking! (nog te implementeren)')">Start GPS Tracking</button>
-    <button onclick="alert('Handmatige invoer loggen!')">Log handmatig activiteit</button>
-    
-    <section id="stats">
-      <h3>Vandaag</h3>
-      <p>Afstand: 0 km</p>
-      <p>Tijd: 0 min</p>
-      <p>Calorieën: 0 kcal</p>
-    </section>
-  </main>
+<main class="content">
+  <section class="feed">
+    <h2>Activiteiten</h2>
 
-  <script src="app.js"></script>
+    <article class="activity-card" tabindex="0" onclick="location.href='activiteit.html'">
+      <div class="activity-header">
+        <h3>Hardloopronde in het park</h3>
+        <time datetime="2025-05-23">23 mei 2025</time>
+      </div>
+      <p>Afstand: 7,5 km | Tijd: 35m 12s | Tempo: 4:42 /km</p>
+    </article>
+
+    <article class="activity-card" tabindex="0" onclick="location.href='activiteit.html'">
+      <div class="activity-header">
+        <h3>Fietstocht langs de kust</h3>
+        <time datetime="2025-05-21">21 mei 2025</time>
+      </div>
+      <p>Afstand: 42 km | Tijd: 1u 45m | Gem. snelheid: 24 km/h</p>
+    </article>
+
+    <!-- Voeg hier meer activiteiten toe -->
+  </section>
+</main>
+
+<nav class="bottombar">
+  <a href="index.html" class="active" aria-label="Dashboard">
+    <span class="icon">🏃‍♂️</span><span class="label">Dashboard</span>
+  </a>
+  <a href="activiteit.html" aria-label="Activiteit toevoegen">
+    <span class="icon">➕</span><span class="label">Nieuwe activiteit</span>
+  </a>
+  <a href="profiel.html" aria-label="Profiel">
+    <span class="icon">👤</span><span class="label">Profiel</span>
+  </a>
+</nav>
+
+<script src="app.js"></script>
 </body>
 </html>
